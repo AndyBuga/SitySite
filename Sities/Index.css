@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background: url("grayfon.jpg");
+    font-size: 45px;
+    margin: 0.25%;
+    border: 2px solid gray;
+    box-shadow: 2px 2px black;
+    height: 200px;
+    text-align: center;
+  }
+
+   header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
+   }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    background: url("grayfon.jpg");
+    float: left;
+    width: 30%;
+    height: 650px; /* only for demonstration, should be removed */
+    margin: 0.25%;
+    border: 2px solid gray;
+    box-shadow: 2px 2px black;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    }
+
+    nav li {
+      list-style-type: none;
+      }
+
+      nav a {
+         color: black;
+         text-align: center;
+         text-decoration: none;
+         font-size: 28px;
+         font-family: 'Courier New', Courier, monospace;
+         font-weight: bold;
+         display: block;
+         padding: 25px;
+         margin: 5px;
+      }
+
+      nav a:hover { /*псевдоклас для работы при наведении курсора*/
+        background:rgb(155, 152, 152);
+    }
+  
+  article {
+    background: url("grayfon.jpg");
+    float: left;
+    padding: 20px;
+    width: 69%;
+    background-color: #f1f1f1;
+    height: 650px; /* only for demonstration, should be removed */
+    margin: 0.25%;
+    border: 2px solid gray;
+    box-shadow: 2px 2px black;
+    overflow: auto;
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background: url("grayfon.jpg");
+    background-color: #777;
+    padding: 7px;
+    text-align:left;
+    color: black;
+    margin: 0.25%;
+    border: 2px solid gray;
+    box-shadow: 2px 2px black;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  h1 a{
+    text-decoration: none;
+    color: black;
+  }
+  #designed {
+    float:left;
+    margin-left: 10%;
+  }
+  #contacts {
+    margin-left: 75%;
+  }
+  #CityFoto {
+    background: url("Sities.jpg");
+    width: 420px;
+    height: 420px;
+    float: left;
+    margin: 5px;
+  }
+  #LondonFoto {
+    background: url("London1.jpg");
+    width: 420px;
+    height: 420px;
+    float: left;
+    margin: 5px;
+  }#MilanFoto {
+    background: url("Milan1.jpg");
+    width: 420px;
+    height: 420px;
+    float: left;
+    margin: 5px;
+  }#TokioFoto {
+    background: url("Tokyo2.jpg");
+    width: 420px;
+    height: 420px;
+    float: left;
+    margin: 5px;
+  }#PekinFoto {
+    background: url("Pekin1.jpg");
+    width: 420px;
+    height: 420px;
+    float: left;
+    margin: 5px;
+  }
+  #ParisFoto {
+    background: url("Paris1.jpg");
+    width: 420px;
+    height: 420px;
+    float: left;
+    margin: 5px;
+  }
+  #OttawaFoto {
+    background: url("Ottawa1.jpg");
+    width: 420px;
+    height: 420px;
+    float: left;
+    margin: 5px;
+  }
